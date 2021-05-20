@@ -1,4 +1,4 @@
-kernel_bash
+calysto_bash
 numpy
 scipy
 matplotlib
