@@ -1,3 +1,0 @@
-pip install bash_kernel
-python -m bash_kernel.install
-pip install jupter_client
