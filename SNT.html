@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+		<title>Sciences Numériques et Technologie</title>
+		<link rel="stylesheet" href="SNT.css">
+
+		<!-- Prettifier de google pour les codes -->
+		<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+		<script>
+		/* Ouverture de l'onglet par défaut au lancement */
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			document.getElementById("defaultTab").click();
+		});
+		
+		/* Ouverture de l'onglet principal (thèmes) */
+		function openTab(evt, idTab) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(idTab).style.display = "block";
+		  evt.currentTarget.className += " active";
+		  
+		  document.getElementById(idTab).getElementsByTagName("button")[0].click();
+		}
+		
+		/* Ouverture de l'onglet intérieur (activités) */
+		function openInnerTab(evt, idTab) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("innertabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("innertablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(idTab).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		</script>
+	</head>
+	
+	<body>
+		<h1>Sciences Numériques et Technologie</h1>
+		<!-- Onglets principaux (thèmes) -->
+		<div class="tab">
+		  <button class="tablinks" onclick="openTab(event, 'Python')" id="defaultTab">Python</button>
+		  <button class="tablinks" onclick="openTab(event, 'Internet')">Thème 1<br>Internet</button>
+		  <button class="tablinks" onclick="openTab(event, 'Web')">Thème 2<br>Le Web</button>
+		  <button class="tablinks" onclick="openTab(event, 'Photo')">Thème 3<br>La photographie numérique</button>
+		  <button class="tablinks" onclick="openTab(event, 'Données')">Thème 4<br>Les données structurées et<br>leur traitement</button>
+		  <button class="tablinks" onclick="openTab(event, 'Localisation')">Thème 5<br>Localisation, cartographie et<br>mobilité</button>
+		  <button class="tablinks" onclick="openTab(event, 'Embarquée')">Thème 6<br>Informatique embarquée et<br>objets connectés</button>
+		  <button class="tablinks" onclick="openTab(event, 'Réseaux')">Thème 7<br>Les réseaux sociaux</button>
+		</div>
+
+		<!-- Contenus des onglets -->
+		<div id="Python" class="tabcontent">
+			<h2>Python</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Python1')">Activité 1</button>
+			</div>
+			
+			
+			<div id="Python1" class="innertabcontent">
+				<!--?php include "Python1.html" ?-->
+				<h3>Activité 1</h3>
+
+				<p>Voici un exemple de code en Python :</p>
+
+<pre class="prettyprint">
+<code class="language-py">print("e")
+# commentaire</code></pre>
+
+				<details>
+					<summary>Restituer le travail</summary>
+					<ol>
+					<li>Connectez-vous à Pronote.</li>
+					<li>Allez dans l'onglet <b>Cahier de texte</b>.</li>
+					<li>Juste en-dessous des onglets, choisissez <b>Travail à faire</b>.</li>
+					<li>Choisissez la matière <b>Sciences numériques et technologie</b>.</li>
+					<li>Cliquez sur <b>Déposer ma copier</b>.</li>
+					<li>Cliquez sur <b>Déposer un fichier</b>.</li>
+					</ol>
+				</details>
+			</div>
+		</div>
+
+		
+		
+		<div id="Internet" class="tabcontent">
+			<h2>Internet</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Internet1')">Activité 1</button>
+			</div>
+			<div id="Internet1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+		
+		
+		
+		<div id="Web" class="tabcontent">
+			<h2>Le Web</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Web1')">Activité 1</button>
+			</div>
+			<div id="Web1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+		
+		
+		
+		<div id="Photo" class="tabcontent">
+			<h2>La photographie numérique</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Photo1')">Activité 1</button>
+			</div>
+			<div id="Photo1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+		
+		
+		
+		<div id="Données" class="tabcontent">
+			<h2>Les données structurées et leur traitement</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Données1')">Activité 1</button>
+			</div>
+			<div id="Données1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+		
+		
+		
+		<div id="Localisation" class="tabcontent">
+			<h2>Localisation, cartographie et mobilité</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Localisation1')">Activité 1</button>
+			</div>
+			<div id="Localisation1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+		
+		
+		
+		<div id="Embarquée" class="tabcontent">
+			<h2>Informatique embarquée et objets connectés</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Embarquée1')">Activité 1</button>
+			</div>
+			<div id="Embarquée1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+		
+		
+		
+		<div id="Réseaux" class="tabcontent">
+			<h2>Les réseaux sociaux</h2>
+			<div class="tab">
+				<button class="innertablinks" onclick="openInnerTab(event, 'Réseaux1')">Activité 1</button>
+			</div>
+			<div id="Réseaux1" class="innertabcontent">
+				<h3>Activité 1</h3>
+			</div>
+		</div>
+	</body>
+</html>

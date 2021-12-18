@@ -1,0 +1,100 @@
+body {
+	background-color: #000;
+}
+
+h1 {
+	margin: 10px auto 10px auto;
+	padding: 2px 10px 2px 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: fit-content;
+	width: -moz-fit-content;
+	background-color: #c4c4ce;
+}
+
+h2 {
+	margin: 10px auto 10px auto;
+	padding: 2px 10px 2px 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: fit-content;
+	width: -moz-fit-content;
+	background-color: #c4c4ce;
+}
+
+/* Résumés */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	min-height: 6em;
+	background-color: inherit;
+	border-radius: 10px;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.innertabcontent, .tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-radius: 0px 0px 10px 10px;
+	background-color: white;
+
+    animation: fadeEffect 0s; /* Fading effect takes 1 second */
+}
+.tabcontent {
+	background-color: #f5f5f5;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
